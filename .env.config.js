@@ -1,1 +1,0 @@
-module.exports={"outputDir":"pm/dist","publicPath":"/pm/dist","proxyConfig":["/pm-api/"],"proxy":{"/pm-api/":{"target":"http://127.0.0.1:82/","changeOrigin":true,"ws":true,"pathRewrite":{"^/pm-api/":""}}},"page":{"entry":"src/sub-pm/main.js","template":"src/sub-pm/index.html","filename":"index.html","title":"pm项目"},"env":"test","projectName":"pm","command":"build"}

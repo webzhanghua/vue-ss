@@ -9,19 +9,19 @@ npm install
 ### 公共的壳子配置不同的运行命令
 
 - 执行命令：打包、本地运行 (build/serve)
-- 区分多个子项目：项目标识 (project1/project2)
 - 运行环境：本地环境、测试环境、线上环境 (local/test/produce)
+- 区分多个子项目：项目标识 (sub-pc/sub-pm)
 
 #### 本地运行
 
 ```
-npm run serve project1 test
+npm run serve test sub-pm
 ```
 
 #### 打包
 
 ```
-npm run build project1 test
+npm run build test sub-pm
 ```
 
 ## 目录结构

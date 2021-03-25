@@ -1,12 +1,12 @@
 
 // 不同环境不同项目的代理地址
 const proxyUrl = {
-  pm: {
+  'sub-pm': {
     local: "http://127.0.0.1:81/",
     test: "http://127.0.0.1:82/",
     produce: "http://127.0.0.1:83/"
   },
-  pc: {
+  'sub-pc': {
     local: "http://127.0.0.1:51/",
     test: "http://127.0.0.1:52/",
     produce: "http://127.0.0.1:53/"
@@ -14,10 +14,10 @@ const proxyUrl = {
 }
 // 不同项目的配置信息
 const config = {
-  pm: {
-    outputDir: 'pm/dist',
-    publicPath: '/pm/dist',
-    proxyConfig: ["/pm-api/"],
+  'sub-pm': {
+    outputDir: 'sub-pm/dist',
+    publicPath: '/sub-pm/dist',
+    proxyConfig: ["/sub-pm-api/"],
     proxy: {},
     page: {
       entry: "src/sub-pm/main.js",
@@ -26,10 +26,10 @@ const config = {
       title: "pm项目",
     }
   },
-  pc: {
-    outputDir: 'pc/dist',
-    publicPath: '/pc/dist',
-    proxyConfig: ["/pc-api/"],
+  'sub-pc': {
+    outputDir: 'sub-pc/dist',
+    publicPath: '/sub-pc/dist',
+    proxyConfig: ["/sub-pc-api/"],
     proxy: {},
     page: {
       entry: "src/sub-pc/main.js",
